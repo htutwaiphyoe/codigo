@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: space-between;
     color: $body-color;
-
+    cursor: pointer;
     &__image {
         object-fit: cover;
         position: absolute;

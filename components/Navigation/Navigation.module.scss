@@ -21,10 +21,16 @@
         height: 10.7rem;
     }
 
-    &__menu {
+    &__menu,
+    &__list {
         display: flex;
         align-items: center;
     }
+
+    &__list {
+        margin-right: 6rem;
+    }
+
     &__item {
         &:not(:last-child) {
             margin-right: 6rem;

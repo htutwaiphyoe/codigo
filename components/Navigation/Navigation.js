@@ -5,6 +5,16 @@ import classes from "./Navigation.module.scss";
 import ScrollRevealHOC from "@/hoc/ScrollReveal/ScrollReveal";
 
 const Navigation = (props) => {
+    return (
+        <ScrollRevealHOC top="#header">
+            <header className={`${classes.navigation} load-hidden`} id="header">
+                <nav className={`${classes.navigation__nav}`}>{props.children()}</nav>
+            </header>
+        </ScrollRevealHOC>
+    );
+};
+
+const FullNavigation = (props) => {
     const router = useRouter();
     const items = [
         { path: "/", text: "Work" },
@@ -14,10 +24,10 @@ const Navigation = (props) => {
         { path: "/blog", text: "Blog" },
     ];
     return (
-        <ScrollRevealHOC top="#header">
-            <header className={`${classes.navigation} load-hidden`} id="header">
-                <nav className={`${classes.navigation__nav}`}>
-                    <Link href="/" forwardRef>
+        <Navigation>
+            {() => (
+                <>
+                    <Link href="/">
                         <a>
                             <Image
                                 src="/images/site/logo-codigo-red.svg"
@@ -29,28 +39,52 @@ const Navigation = (props) => {
                         </a>
                     </Link>
 
-                    <ul className={`${classes.navigation__menu}`}>
-                        {items.map((item) => (
-                            <li
-                                className={`${classes.navigation__item} ${
-                                    router.pathname === item.path ? classes.navigation__active : ""
-                                }`}
-                                key={item.text}
-                            >
-                                <Link href={item.path}>
-                                    <a className={`${classes.navigation__link}`}>{item.text}</a>
-                                </Link>
-                            </li>
-                        ))}
-
+                    <div className={`${classes.navigation__menu}`}>
+                        <ul className={`${classes.navigation__list}`}>
+                            {items.map((item) => (
+                                <li
+                                    className={`${classes.navigation__item} ${
+                                        router.pathname === item.path
+                                            ? classes.navigation__active
+                                            : ""
+                                    }`}
+                                    key={item.text}
+                                >
+                                    <Link href={item.path}>
+                                        <a className={`${classes.navigation__link}`}>{item.text}</a>
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
                         <Link href="/">
                             <a className={`${classes.navigation__btn}`}>Request a quote</a>
                         </Link>
-                    </ul>
-                </nav>
-            </header>
-        </ScrollRevealHOC>
+                    </div>
+                </>
+            )}
+        </Navigation>
     );
 };
 
-export default Navigation;
+const BackNavigation = (props) => {
+    return (
+        <Navigation>
+            {() => (
+                <>
+                    <ul className={`${classes.navigation__list}`}>
+                        <li className={`${classes.navigation__item} `}>
+                            <Link href="/">
+                                <a className={`${classes.navigation__link}`}>Back to Work</a>
+                            </Link>
+                        </li>
+                    </ul>
+
+                    <Link href="/">
+                        <a className={`${classes.navigation__btn}`}>Request a quote</a>
+                    </Link>
+                </>
+            )}
+        </Navigation>
+    );
+};
+export { FullNavigation, BackNavigation };
