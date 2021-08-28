@@ -1,7 +1,13 @@
+import Layout from "@/components/Layout/Layout";
+
 import "../sass/main.scss";
 
-function App({ Component, pageProps }) {
-    return <Component {...pageProps} />;
-}
+const App = ({ Component, pageProps }) => {
+    return (
+        <Layout>
+            <Component {...pageProps} />
+        </Layout>
+    );
+};
 
 export default App;
