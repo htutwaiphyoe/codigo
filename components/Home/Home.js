@@ -1,14 +1,11 @@
 import classes from "./Home.module.scss";
+import Headings from "./Headings/Headings";
+import Images from "./Images/Images";
 
 const Home = (props) => {
     return (
         <section className={`${classes.home}`}>
-            <p className={`${classes.home__title}`}>Here's 5% of</p>
-            <p className={`${classes.home__title}`}>our published work.</p>
-            <p className={`${classes.home__title} ${classes.home__title_red}`}>
-                See 100% of our power
-            </p>
-
+            <Headings />
             <div className={`${classes.home__content}`}>
                 <div className={`${classes.home__category}`}>
                     <div className={`${classes.home__all}`}>All</div>

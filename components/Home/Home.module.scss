@@ -6,16 +6,6 @@
     width: 75%;
     margin: 0 auto;
 
-    &__title {
-        font-weight: 800;
-        font-size: 6.2rem;
-        line-height: 7rem;
-
-        &_red {
-            color: $primary-color;
-        }
-    }
-
     &__content {
         display: grid;
         grid-template-columns: minmax(65%, 81rem) auto 20rem;

@@ -51,3 +51,15 @@ textarea {
 button {
     cursor: pointer;
 }
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: $body-color;
+    @include radius(1rem);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba($text-color, 0.7);
+    opacity: 0.1;
+    @include radius(1rem);
+}

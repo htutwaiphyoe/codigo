@@ -1,0 +1,7 @@
+.images {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-auto-flow: row dense;
+
+  
+}

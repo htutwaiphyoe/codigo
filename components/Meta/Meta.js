@@ -3,7 +3,7 @@ import Head from "next/head";
 const Meta = ({ title, description }) => {
     return (
         <Head>
-            <title>{title ? title : "Our iOS, Android &amp; Web Development Work | Codigo"}</title>
+            <title>{title ? title : "Our iOS, Android & Web Development Work | Codigo"}</title>
             <meta
                 name="description"
                 content={

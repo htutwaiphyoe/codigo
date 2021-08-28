@@ -1,0 +1,12 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+.headings {
+    font-weight: 800;
+    font-size: 6.2rem;
+    line-height: 7rem;
+
+    &_red {
+        color: $primary-color;
+    }
+}
