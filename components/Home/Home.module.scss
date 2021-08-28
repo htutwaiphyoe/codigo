@@ -1,2 +1,85 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
 .home {
+    padding-top: 22rem;
+    width: 75%;
+    margin: 0 auto;
+
+    &__title {
+        font-weight: 800;
+        font-size: 6.2rem;
+        line-height: 7rem;
+
+        &_red {
+            color: $primary-color;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: minmax(65%, 81rem) auto 20rem;
+        grid-template-rows: 5rem min-content 5.5rem;
+    }
+
+    &__category {
+        grid-row: 2;
+        grid-column: 1;
+        display: inline-grid;
+        // grid-template-columns: repeat(3, calc((100% - 2rem) / 3));
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+
+        & > div {
+            padding: 10px 25px 10px 0;
+            cursor: pointer;
+        }
+    }
+    &__all {
+        font-weight: 900;
+        position: relative;
+        margin-left: 2.5rem;
+
+        &::before {
+            content: "";
+            height: 0.2rem;
+            position: absolute;
+            display: block;
+            width: 1.5rem;
+            top: 50%;
+            left: -10%;
+            background-color: $primary-color;
+        }
+    }
+
+    &__typewrapper {
+        display: grid;
+        align-self: end;
+        grid-column: 3;
+        grid-row: 2;
+        font-size: 1rem;
+    }
+
+    &__legend {
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    &__types {
+        border-left: 1px solid $black-color;
+        padding: 1rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__type {
+        padding: 0 2rem 0;
+        text-align: center;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            margin-bottom: 1.5rem;
+        }
+    }
 }
