@@ -1,0 +1,19 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+.button {
+    padding: 1.6rem 2.2rem;
+    background-color: #3a2837;
+    font-size: 1.4rem;
+    color: $body-color;
+    @include radius(3rem);
+    @include transition(transform, 0.3s);
+
+    &:hover {
+        transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+        -moz-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        -o-transform: scale(1.03);
+    }
+}

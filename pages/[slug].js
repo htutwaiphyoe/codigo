@@ -2,7 +2,7 @@ import Meta from "@/components/Meta/Meta";
 import { BackNavigation } from "@/components/Navigation/Navigation";
 import Detail from "@/components/Detail/Detail";
 
-const HomePage = (props) => {
+const DetailPage = (props) => {
     return (
         <>
             <Meta />
@@ -12,4 +12,4 @@ const HomePage = (props) => {
     );
 };
 
-export default HomePage;
+export default DetailPage;

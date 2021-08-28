@@ -1,8 +1,9 @@
 import Link from "next/link";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import classes from "./Navigation.module.scss";
 import ScrollRevealHOC from "@/hoc/ScrollReveal/ScrollReveal";
+import Logo from "./Logo/Logo";
+import Button from "../Button/Button";
 
 const Navigation = (props) => {
     return (
@@ -27,18 +28,7 @@ const FullNavigation = (props) => {
         <Navigation>
             {() => (
                 <>
-                    <Link href="/">
-                        <a>
-                            <Image
-                                src="/images/site/logo-codigo-red.svg"
-                                alt="Codigo Logo"
-                                width={145}
-                                height={30}
-                                className={`${classes.navigation__logo}`}
-                            />
-                        </a>
-                    </Link>
-
+                    <Logo />
                     <div className={`${classes.navigation__menu}`}>
                         <ul className={`${classes.navigation__list}`}>
                             {items.map((item) => (
@@ -56,9 +46,7 @@ const FullNavigation = (props) => {
                                 </li>
                             ))}
                         </ul>
-                        <Link href="/">
-                            <a className={`${classes.navigation__btn}`}>Request a quote</a>
-                        </Link>
+                        <Button />
                     </div>
                 </>
             )}
@@ -78,10 +66,7 @@ const BackNavigation = (props) => {
                             </Link>
                         </li>
                     </ul>
-
-                    <Link href="/">
-                        <a className={`${classes.navigation__btn}`}>Request a quote</a>
-                    </Link>
+                    <Button />
                 </>
             )}
         </Navigation>

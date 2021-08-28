@@ -14,6 +14,7 @@ SwiperCore.use([EffectFade, Navigation, Pagination]);
 import classes from "./Slide.module.scss";
 
 const Slide = (props) => {
+    const slides = ["slide1.png", "slide2.png", "slide3.png", "slide4.png", "slide5.png"];
     return (
         <div className={`${classes.slide}`}>
             <div className={`${classes.slide__circle}`}></div>
@@ -29,21 +30,11 @@ const Slide = (props) => {
                         crossFade: true,
                     }}
                 >
-                    <SwiperSlide>
-                        <img src="/images/site/detail/slide1.png" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="/images/site/detail/slide2.png" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="/images/site/detail/slide3.png" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="/images/site/detail/slide5.png" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="/images/site/detail/slide4.png" />
-                    </SwiperSlide>
+                    {slides.map((slide) => (
+                        <SwiperSlide key={slide}>
+                            <img src={`/images/site/detail/${slide}`} />
+                        </SwiperSlide>
+                    ))}
                 </Swiper>
             </div>
         </div>
