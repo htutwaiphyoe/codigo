@@ -3,18 +3,16 @@ import { useRef, useEffect, useState } from "react";
 
 const Image = ({ image }) => {
     const imageRef = useRef();
-    const [span, setSpan] = useState(null);
+    const [span, setSpan] = useState(false);
     useEffect(() => {
         if (imageRef.current) {
             if (imageRef.current.naturalWidth > imageRef.current.naturalHeight) {
                 setSpan(true);
             }
         }
-    }, []);
+    }, [span]); 
     return (
-        <figure
-            className={`${classes.image} ${span !== null && span !== false && classes.image_span}`}
-        >
+        <figure className={`${classes.image} ${span ? classes.image_span : ""}`}>
             <img
                 src={`/images/site/home/${image.src}`}
                 alt={image.name}

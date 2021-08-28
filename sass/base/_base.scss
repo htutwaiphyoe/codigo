@@ -63,3 +63,7 @@ button {
     opacity: 0.1;
     @include radius(1rem);
 }
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
