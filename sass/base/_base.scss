@@ -67,3 +67,31 @@ button {
 html.sr .load-hidden {
     visibility: hidden;
 }
+.swiper {
+    width: 100% !important;
+    height: 100% !important;
+}
+.swiper .swiper-pagination {
+    bottom: 2rem !important;
+    left: 30rem !important;
+    text-align: initial !important;
+}
+.swiper-horizontal > .swiper-pagination-bullets {
+    bottom: -1rem !important;
+    z-index: 100 !important;
+    height: 30px !important;
+}
+.swiper-pagination-bullet-active {
+    background-color: #d5333e !important;
+}
+.swiper-pagination-bullet {
+    width: 1rem !important;
+    height: 1rem !important;
+}
+
+.swiper-slide img {
+    width: 50vw !important;
+    height: 50vw !important;
+    max-width: 690px !important;
+    max-height: 690px !important;
+}

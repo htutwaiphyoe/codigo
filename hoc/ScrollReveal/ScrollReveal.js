@@ -3,8 +3,8 @@ import { useEffect } from "react";
 function ScrollRevealHOC({ top, right, bottom, left, children }) {
     useEffect(() => {
         const sr = ScrollReveal({
-            distance: "30px",
-            duration: 1000,
+            distance: "40px",
+            duration: 2000,
             // reset: true,
         });
         sr.reveal(left, {
@@ -27,7 +27,7 @@ function ScrollRevealHOC({ top, right, bottom, left, children }) {
         return () => {
             sr.destroy();
         };
-    });
+    }, []);
 
     return <>{children}</>;
 }

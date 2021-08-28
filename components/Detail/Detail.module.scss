@@ -4,9 +4,11 @@
     padding: 20rem 0 15rem;
     width: 85%;
     margin: 0 auto;
-
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     &__info {
-        width: 50%;
+        // width: 50%;
         max-width: 54rem;
     }
     &__heading {
@@ -68,3 +70,5 @@
         margin-bottom: 1.5rem;
     }
 }
+
+
