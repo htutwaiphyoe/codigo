@@ -10,6 +10,7 @@ const Logo = (props) => {
                     alt="Codigo Logo"
                     width={145}
                     height={30}
+                    priority={true}
                 />
             </a>
         </Link>
