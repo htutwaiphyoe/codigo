@@ -31,7 +31,7 @@ const Slide = (props) => {
                     }}
                 >
                     {slides.map((slide, i) => (
-                        <div className={`${classes.slide__swiperslide}`} key={slide}>
+                        <div className={`${classes.slide__swiperslide}`} key={i}>
                             <SwiperSlide>
                                 <img
                                     src={`/images/site/detail/${slide}`}

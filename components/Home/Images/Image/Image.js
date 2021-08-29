@@ -13,6 +13,7 @@ const Image = ({ image }) => {
     //         }
     //     }
     // }, [span]);
+
     return (
         <Link href={`/${generateSlug(image.name)}`}>
             <figure className={`${classes.image} ${image.span ? classes.image_span : ""}`}>
@@ -30,9 +31,15 @@ const Image = ({ image }) => {
                 </div>
 
                 <div className={`${classes.image__circlewrapper}`}>
-                    {new Array(image.dots).fill(0).map((d, i) => (
-                        <span className={`${classes.image__circle}`} key={i}></span>
-                    ))}
+                    {image.icons.map((icon) => {
+                        console.log(icon);
+
+                        return (
+                            <span className={`${classes.image__circle}`} key={icon}>
+                                <i className={`ri-${icon}`}></i>
+                            </span>
+                        );
+                    })}
                 </div>
             </figure>
         </Link>
