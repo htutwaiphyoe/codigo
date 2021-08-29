@@ -28,7 +28,7 @@
     &__all {
         font-weight: 900;
         position: relative;
-        margin-left: 2.5rem;
+        margin-left: 4rem;
 
         &::before {
             content: "";
@@ -37,7 +37,7 @@
             display: block;
             width: 1.5rem;
             top: 50%;
-            left: -10%;
+            left: -16%;
             background-color: $primary-color;
         }
     }
