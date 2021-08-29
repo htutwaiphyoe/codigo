@@ -16,11 +16,11 @@
         max-width: 580px;
         max-height: 580px;
         background-color: #6dc9c3;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) scale(1);
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        -moz-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+        -o-transform: translate(-50%, -50%) scale(1);
         animation: scaleUp 1s ease-out;
         -webkit-animation: scaleUp 1s ease-out;
         @include radius(50%);
