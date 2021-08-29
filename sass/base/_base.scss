@@ -10,6 +10,10 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     box-sizing: border-box;
+
+    @include responsive(1, 319) {
+        font-size: 50%;
+    }
 }
 
 body {

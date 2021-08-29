@@ -15,6 +15,10 @@
     @include radius(50%);
     @include transition(transform, 0.3s);
 
+    @include responsive(1, 979) {
+        display: none;
+    }
+
     &_left {
         left: 0;
         top: 50%;

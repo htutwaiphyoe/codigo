@@ -57,4 +57,10 @@
     &__active {
         font-weight: 700;
     }
+
+    @include responsive(1, 980) {
+        &__menu {
+            display: none;
+        }
+    }
 }

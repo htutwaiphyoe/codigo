@@ -8,7 +8,7 @@ const Arrow = ({ icon }) => {
             const detail = document.getElementById("detail");
             const currentYScroll = window.scrollY;
             const sectionHeight = detail.offsetHeight;
-            const sectionTop = detail.offsetTop - 300;
+            const sectionTop = detail.offsetTop - 500;
             if (currentYScroll < sectionTop + sectionHeight) {
                 arrowRef.current.classList.add(classes[`arrow__show_${icon}`]);
             } else {

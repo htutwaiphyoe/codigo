@@ -1,4 +1,5 @@
 import classes from "./Footer.module.scss";
+import Socials from "./Socials/Socials";
 
 const Footer = (props) => {
     const footerData = {
@@ -7,12 +8,6 @@ const Footer = (props) => {
             { title: "Co-incubate", description: "Co-incubate an idea together" },
             { title: "Customise", description: "Customise a solution for your business" },
             { title: "Organize", description: "Organise learning sessions with us" },
-        ],
-        socials: [
-            { url: "/", icon: "facebook-fill" },
-            { url: "/", icon: "twitter-fill" },
-            { url: "/", icon: "instagram-fill" },
-            { url: "/", icon: "linkedin-fill" },
         ],
     };
 
@@ -27,15 +22,7 @@ const Footer = (props) => {
                     </div>
                 ))}
             </div>
-
-            <div className={`${classes.footer__socials}`}>
-                {footerData.socials.map((s, i) => (
-                    <a href={s.url} className={`${classes.footer__link}`} key={i}>
-                        <i className={`ri-${s.icon} ${classes.footer__icon}`}></i>
-                    </a>
-                ))}
-            </div>
-
+            <Socials />
             <p className={`${classes.footer__copy}`}>
                 Copyright © Codigo - Mobile App Developer Singapore
             </p>

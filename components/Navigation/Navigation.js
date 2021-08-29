@@ -6,6 +6,7 @@ import ScrollRevealHOC from "@/hoc/ScrollReveal/ScrollReveal";
 import Logo from "./Logo/Logo";
 import Button from "../Button/Button";
 import { useEffect, useState } from "react";
+import Humburger from "../Humburger/Humburger";
 
 const Navigation = (props) => {
     let [navigationRoot, setNavigationRoot] = useState(null);
@@ -58,6 +59,7 @@ const FullNavigation = (props) => {
                         </ul>
                         <Button />
                     </div>
+                    <Humburger items={items} />
                 </>
             )}
         </Navigation>
@@ -76,7 +78,12 @@ const BackNavigation = (props) => {
                             </Link>
                         </li>
                     </ul>
-                    <Button />
+
+                    <div className={`${classes.navigation__menu}`}>
+                        <Button />
+                    </div>
+
+                    <Humburger items={[{ path: "/", text: "Request a quote" }]} />
                 </>
             )}
         </Navigation>
