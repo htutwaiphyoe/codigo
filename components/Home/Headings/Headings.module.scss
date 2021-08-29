@@ -9,4 +9,12 @@
     &_red {
         color: $primary-color;
     }
+
+    @include responsive(1, 900) {
+        font-size: 6.5vw;
+    }
+    @include responsive(1, 600) {
+        font-size: 13vw;
+        line-height: 12vw;
+    }
 }

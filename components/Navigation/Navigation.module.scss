@@ -63,4 +63,10 @@
             display: none;
         }
     }
+
+    @include responsive(1, 576) {
+        &__nav {
+            width: calc(100% - 3rem);
+        }
+    }
 }

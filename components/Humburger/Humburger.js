@@ -8,6 +8,9 @@ const Humburger = (props) => {
     const onClickHandler = () => {
         setIsOpen((state) => !state);
     };
+    const onLinkClick = () => {
+        setIsOpen((state) => !state);
+    };
     return (
         <div className={classes.humburger}>
             <div className={classes.humburger__btn} onClick={onClickHandler}>
@@ -31,13 +34,17 @@ const Humburger = (props) => {
                     {props.items.map((item, i) => (
                         <li className={classes.humburger__item} key={i}>
                             <Link href={item.path}>
-                                <a className={`${classes.humburger__link}`}>{item.text}</a>
+                                <a className={`${classes.humburger__link}`} onClick={onLinkClick}>
+                                    {item.text}
+                                </a>
                             </Link>
                         </li>
                     ))}
                     <li className={classes.humburger__item}>
                         <Link href="/">
-                            <a className={`${classes.humburger__link}`}>Let's chat</a>
+                            <a className={`${classes.humburger__link}`} onClick={onLinkClick}>
+                                Let's chat
+                            </a>
                         </Link>
                     </li>
 

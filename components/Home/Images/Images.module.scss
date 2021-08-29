@@ -1,7 +1,20 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
 .images {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-auto-flow: row dense;
 
-  
+    @include responsive(1, 1100) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include responsive(1, 980) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive(1, 600) {
+        margin-top: 4rem;
+        grid-template-columns: 1fr;
+    }
 }

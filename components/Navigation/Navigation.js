@@ -30,10 +30,10 @@ const FullNavigation = (props) => {
     const router = useRouter();
     const items = [
         { path: "/", text: "Work" },
-        { path: "/solutions", text: "Solutions" },
-        { path: "/services", text: "Services" },
-        { path: "/about", text: "About us" },
-        { path: "/blog", text: "Blog" },
+        { path: "/", text: "Solutions" },
+        { path: "/", text: "Services" },
+        { path: "/", text: "About us" },
+        { path: "/", text: "Blog" },
     ];
     return (
         <Navigation>

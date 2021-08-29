@@ -72,4 +72,24 @@
             margin-bottom: 1.5rem;
         }
     }
+
+    @include responsive(1, 900) {
+        width: 85%;
+        &__content {
+            grid-template-columns: 1fr;
+            grid-template-rows: 50px min-content 55px min-content 50px;
+        }
+        &__typewrapper {
+            grid-column: 1;
+            grid-row: 4;
+            justify-self: self-start;
+        }
+    }
+
+    @include responsive(1, 600) {
+        padding-top: 15rem;
+        &__content {
+            display: none;
+        }
+    }
 }

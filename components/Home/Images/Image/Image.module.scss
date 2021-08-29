@@ -55,4 +55,15 @@
             margin-left: 1rem;
         }
     }
+
+    @include responsive(1, 1100) {
+        min-height: 42vw;
+        max-height: 42vw;
+    }
+
+    @include responsive(1, 600) {
+        &_span {
+            grid-column: initial;
+        }
+    }
 }

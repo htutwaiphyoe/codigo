@@ -53,4 +53,24 @@
         font-size: 1.4rem;
         margin-bottom: 1.3rem;
     }
+
+    @include responsive(1, 980) {
+        &__trusts {
+            width: 100%;
+
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__trust {
+            &:not(:last-child) {
+                border-right: none;
+            }
+        }
+    }
+    @include responsive(1, 576) {
+        padding: 5rem 2rem 3rem;
+        &__trusts {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 }
