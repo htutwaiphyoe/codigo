@@ -59,9 +59,12 @@
             width: 100%;
 
             grid-template-columns: repeat(2, 1fr);
+            column-gap: 2rem;
         }
 
         &__trust {
+            padding: 2rem 0rem;
+            border-bottom: 1px solid rgba($black-color, 0.1);
             &:not(:last-child) {
                 border-right: none;
             }
