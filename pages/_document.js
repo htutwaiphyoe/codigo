@@ -37,6 +37,7 @@ class Codigo extends Document {
                     <script src="https://unpkg.com/scrollreveal"></script>
                 </Head>
                 <body>
+                    <div id="nav"></div>
                     <Main />
                     <NextScript />
                 </body>

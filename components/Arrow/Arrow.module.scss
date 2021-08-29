@@ -1,0 +1,68 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+.arrow {
+    position: fixed;
+    z-index: 100;
+
+    background-color: #e43333;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    @include radius(50%);
+    @include transition(transform, 0.3s);
+
+    &_left {
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        -webkit-transform: translate(-50%, -50%) scale(0);
+        -moz-transform: translate(-50%, -50%) scale(0);
+        -ms-transform: translate(-50%, -50%) scale(0);
+        -o-transform: translate(-50%, -50%) scale(0);
+    }
+
+    &_right {
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%) scale(0);
+        -webkit-transform: translate(50%, -50%) scale(0);
+        -moz-transform: translate(50%, -50%) scale(0);
+        -ms-transform: translate(50%, -50%) scale(0);
+        -o-transform: translate(50%, -50%) scale(0);
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__icon_left {
+        font-size: 1.6rem;
+        color: $body-color;
+        margin-left: 4rem;
+    }
+
+    &__icon_right {
+        font-size: 1.6rem;
+        color: $body-color;
+        margin-right: 4rem;
+    }
+    &__show_left {
+        transform: translate(-50%, -50%) scale(1);
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        -moz-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+        -o-transform: translate(-50%, -50%) scale(1);
+    }
+
+    &__show_right {
+        transform: translate(50%, -50%) scale(1);
+        -webkit-transform: translate(50%, -50%) scale(1);
+        -moz-transform: translate(50%, -50%) scale(1);
+        -ms-transform: translate(50%, -50%) scale(1);
+        -o-transform: translate(50%, -50%) scale(1);
+    }
+}

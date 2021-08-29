@@ -1,17 +1,27 @@
 import Link from "next/link";
+import ReactDOM from "react-dom";
 import { useRouter } from "next/router";
 import classes from "./Navigation.module.scss";
 import ScrollRevealHOC from "@/hoc/ScrollReveal/ScrollReveal";
 import Logo from "./Logo/Logo";
 import Button from "../Button/Button";
+import { useEffect, useState } from "react";
 
 const Navigation = (props) => {
+    let [navigationRoot, setNavigationRoot] = useState(null);
+    useEffect(() => {
+        setNavigationRoot(document.getElementById("nav"));
+    }, []);
     return (
-        <ScrollRevealHOC top="#header">
-            <header className={`${classes.navigation} load-hidden`} id="header">
-                <nav className={`${classes.navigation__nav}`}>{props.children()}</nav>
-            </header>
-        </ScrollRevealHOC>
+        navigationRoot &&
+        ReactDOM.createPortal(
+            <ScrollRevealHOC top="#header">
+                <header className={`${classes.navigation} load-hidden`} id="header">
+                    <nav className={`${classes.navigation__nav}`}>{props.children()}</nav>
+                </header>
+            </ScrollRevealHOC>,
+            navigationRoot
+        )
     );
 };
 

@@ -17,7 +17,7 @@ const Detail = (props) => {
     };
     return (
         <ScrollRevealHOC bottom="#heading, #download, #description, #features">
-            <section className={`${classes.detail}`}>
+            <section className={`${classes.detail}`} id="detail">
                 <div className={`${classes.detail__info}`}>
                     <h1 className={`${classes.detail__heading} load-hidden`} id="heading">
                         OCBC Pay Anyone
