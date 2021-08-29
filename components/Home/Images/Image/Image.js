@@ -32,8 +32,6 @@ const Image = ({ image }) => {
 
                 <div className={`${classes.image__circlewrapper}`}>
                     {image.icons.map((icon) => {
-                        console.log(icon);
-
                         return (
                             <span className={`${classes.image__circle}`} key={icon}>
                                 <i className={`ri-${icon}`}></i>
