@@ -3,9 +3,7 @@
 
 .humburger {
     position: relative;
-    @include responsive(0, 980) {
-        display: none;
-    }
+
     &__btn {
         height: 5rem;
         width: 5rem;
@@ -148,7 +146,9 @@
         display: inline-block;
         padding: 0.5rem 1rem;
     }
-
+    @include responsive(0, 980) {
+        display: none;
+    }
     @include responsive(1, 900) {
         &__bg {
             &_active {

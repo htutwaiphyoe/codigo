@@ -68,7 +68,7 @@
         margin-bottom: 1.5rem;
     }
 
-    @include responsive(1, 1300) {
+    @include responsive(1, 1400) {
         grid-template-columns: 40% 60%;
     }
     @include responsive(1, 980) {

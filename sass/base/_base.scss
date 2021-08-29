@@ -72,13 +72,17 @@ html.sr .load-hidden {
     visibility: hidden;
 }
 .swiper {
-    width: 100% !important;
-    height: 100% !important;
+    width: 70rem !important;
+    height: 70rem !important;
+    max-width: 70rem !important;
+    max-height: 70rem !important;
+    margin-top: 2rem;
 }
+
 .swiper .swiper-pagination {
     bottom: 2rem !important;
-    left: 30rem !important;
-    text-align: initial !important;
+    // left: 20rem !important;
+    // text-align: initial !important;
 }
 .swiper-horizontal > .swiper-pagination-bullets {
     bottom: -1rem !important;
@@ -93,9 +97,63 @@ html.sr .load-hidden {
     height: 1rem !important;
 }
 
+.swiper-wrapper {
+    display: inline-flex !important;
+}
+.swiper .swiper-pagination,
 .swiper-slide img {
-    width: 50vw !important;
-    height: 50vw !important;
-    max-width: 690px !important;
-    max-height: 690px !important;
+    transform: translateX(5.5%) !important;
+    -webkit-transform: translateX(5.5%) !important;
+    -moz-transform: translateX(5.5%) !important;
+    -ms-transform: translateX(5.5%) !important;
+    -o-transform: translateX(5.5%) !important;
+}
+
+@include responsive(1, 1300) {
+    .swiper .swiper-pagination,
+    .swiper-slide img {
+        transform: translateX(1%) !important;
+        -webkit-transform: translateX(1%) !important;
+        -moz-transform: translateX(1%) !important;
+        -ms-transform: translateX(1%) !important;
+        -o-transform: translateX(1%) !important;
+    }
+}
+
+@include responsive(1, 1100) {
+    .swiper .swiper-pagination,
+    .swiper-slide img {
+        transform: translateX(-3rem) !important;
+        -webkit-transform: translateX(-3rem) !important;
+        -moz-transform: translateX(-3rem) !important;
+        -ms-transform: translateX(-3rem) !important;
+        -o-transform: translateX(-3rem) !important;
+    }
+}
+
+@include responsive(1, 980) {
+    .swiper .swiper-pagination,
+    .swiper-slide img {
+        transform: translateX(5rem) !important;
+        -webkit-transform: translateX(5rem) !important;
+        -moz-transform: translateX(5rem) !important;
+        -ms-transform: translateX(5rem) !important;
+        -o-transform: translateX(5rem) !important;
+    }
+    .swiper {
+        width: 100% !important;
+        height: 100% !important;
+        margin-top: 0;
+    }
+}
+
+@include responsive(1, 700) {
+    .swiper .swiper-pagination,
+    .swiper-slide img {
+        transform: translateX(3rem) !important;
+        -webkit-transform: translateX(3rem) !important;
+        -moz-transform: translateX(3rem) !important;
+        -ms-transform: translateX(3rem) !important;
+        -o-transform: translateX(3rem) !important;
+    }
 }

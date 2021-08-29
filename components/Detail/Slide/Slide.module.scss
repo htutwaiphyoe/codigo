@@ -6,6 +6,7 @@
     position: relative;
     overflow: hidden;
     margin-top: -3rem;
+    width: 100%;
     &__circle {
         position: absolute;
         top: 50%;
@@ -26,13 +27,34 @@
     }
 
     &__swiper {
-        transform: translateX(-5rem);
-        -webkit-transform: translateX(-5rem);
-        -moz-transform: translateX(-5rem);
-        -ms-transform: translateX(-5rem);
-        -o-transform: translateX(-5rem);
         animation: fadeIn 1s 1s ease-out forwards;
         -webkit-animation: fadeIn 1s 1s ease-out forwards;
         opacity: 0;
+    }
+
+    &__swiperslide {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @include responsive(1, 980) {
+        &__swiper {
+            width: 100vw;
+            height: auto;
+            max-width: 60rem;
+            max-height: 60rem;
+            margin: 0 auto;
+        }
+        &__circle {
+            width: 80vw;
+            height: 80vw;
+            max-width: 50rem;
+            max-height: 50rem;
+        }
+        &__image {
+            object-fit: cover;
+        }
     }
 }
