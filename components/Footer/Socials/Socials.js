@@ -10,7 +10,7 @@ const Socials = (props) => {
     return (
         <div className={`${classes.socials} `}>
             {socials.map((s, i) => (
-                <a href={s.url} className={`${classes.socials__link}`} key={i}>
+                <a href={s.url} className={`${classes.socials__link}`} key={s.icon}>
                     <i
                         className={`ri-${s.icon} ${classes.socials__icon}  ${
                             props.white ? classes.socials__icon_white : ""

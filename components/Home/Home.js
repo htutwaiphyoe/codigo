@@ -27,7 +27,7 @@ const Home = (props) => {
                     <div className={`${classes.home__category}`}>
                         <div className={`${classes.home__all}`}>All</div>
                         {content.categories.map((c, i) => (
-                            <div key={i}>{c}</div>
+                            <div key={c}>{c}</div>
                         ))}
                     </div>
 
@@ -35,7 +35,7 @@ const Home = (props) => {
                         <p className={`${classes.home__legend}`}>Legend</p>
                         <div className={`${classes.home__types}`}>
                             {content.types.map((t, i) => (
-                                <div className={`${classes.home__type}`} key={i}>
+                                <div className={`${classes.home__type}`} key={t}>
                                     {t}
                                 </div>
                             ))}

@@ -6,7 +6,7 @@ import Arrow from "@/components/Arrow/Arrow";
 const DetailPage = (props) => {
     return (
         <>
-            <Meta />
+            <Meta title="OCBC Pay Anyone - Codigo" />
             <Arrow icon="left" />
             <Arrow icon="right" />
             <BackNavigation />

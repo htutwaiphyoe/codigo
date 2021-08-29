@@ -16,7 +16,7 @@ const Footer = (props) => {
             <h2 className={`${classes.footer__heading}`}>Let's have a chat</h2>
             <div className={`${classes.footer__trusts}`}>
                 {footerData.trusts.map((t, i) => (
-                    <div className={`${classes.footer__trust}`} key={i}>
+                    <div className={`${classes.footer__trust}`} key={t.title}>
                         <h3 className={`${classes.footer__title}`}>{t.title}</h3>
                         <span className={`${classes.footer__description}`}>{t.description}</span>
                     </div>

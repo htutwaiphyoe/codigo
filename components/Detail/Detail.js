@@ -25,7 +25,7 @@ const Detail = (props) => {
 
                     <div className={`${classes.detail__download} load-hidden`} id="download">
                         {details.download.map((d, i) => (
-                            <div className={`${classes.detail__item}`} key={i}>
+                            <div className={`${classes.detail__item}`} key={d.name}>
                                 <img
                                     src={`/images/site/detail/${d.src}.png`}
                                     alt={d.name}
@@ -48,7 +48,7 @@ const Detail = (props) => {
                         <h3 className={`${classes.detail__featureheading}`}>Key Features</h3>
                         <div className={`${classes.detail__features}`}>
                             {details.features.map((f, i) => (
-                                <p key={i} className={`${classes.detail__feature}`}>
+                                <p key={f} className={`${classes.detail__feature}`}>
                                     {f}
                                 </p>
                             ))}

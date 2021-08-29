@@ -8,7 +8,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     &__info {
-        // width: 50%;
         max-width: 54rem;
     }
     &__heading {
@@ -100,12 +99,7 @@
         }
 
         &__item {
-            flex-direction: column;
             align-items: initial;
-        }
-        &__image {
-            margin-right: 0rem;
-            margin-bottom: 1rem;
         }
     }
 }

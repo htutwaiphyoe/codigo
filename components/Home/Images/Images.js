@@ -7,7 +7,7 @@ const Images = (props) => {
     return (
         <div className={`${classes.images}`}>
             {images.map((image, i) => (
-                <Image image={image} key={i} />
+                <Image image={image} key={image.name} />
             ))}
         </div>
     );

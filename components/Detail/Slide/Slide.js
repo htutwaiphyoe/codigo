@@ -30,7 +30,7 @@ const Slide = (props) => {
                         crossFade: true,
                     }}
                 >
-                    {slides.map((slide) => (
+                    {slides.map((slide, i) => (
                         <div className={`${classes.slide__swiperslide}`} key={slide}>
                             <SwiperSlide>
                                 <img

@@ -32,7 +32,7 @@ const Humburger = (props) => {
             >
                 <ul className={classes.humburger__list}>
                     {props.items.map((item, i) => (
-                        <li className={classes.humburger__item} key={i}>
+                        <li className={classes.humburger__item} key={item}>
                             <Link href={item.path}>
                                 <a className={`${classes.humburger__link}`} onClick={onLinkClick}>
                                     {item.text}

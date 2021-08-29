@@ -1,9 +1,25 @@
 export const images = [
-    { src: "image1.jpg", type: "Banking & Finance", name: "OCBC Pay Anyone", dots: 2, span: true },
+    {
+        src: "image1.jpg",
+        type: "Banking & Finance",
+        name: "OCBC Pay Anyone",
+        dots: 2,
+        span: true,
+    },
     { src: "image2.jpg", type: "Others", name: "Ecolab", dots: 3 },
-    { src: "image3.jpg", type: "KIWI Auto Marketplace", name: "Others, Start-ups", dots: 4 },
+    {
+        src: "image3.jpg",
+        type: "KIWI Auto Marketplace",
+        name: "Others, Start-ups",
+        dots: 4,
+    },
     { src: "image4.jpg", type: "Lifestyle", name: "Furama Hotels", dots: 2 },
-    { src: "image5.jpg", type: "Transport & Logistics", name: "Woodlands Transport", dots: 4 },
+    {
+        src: "image5.jpg",
+        type: "Transport & Logistics",
+        name: "Woodlands Transport",
+        dots: 4,
+    },
     {
         src: "image6.jpg",
         type: "Lifesyle, Retail & Entertainment, Start-ups",
@@ -29,10 +45,22 @@ export const images = [
     { src: "image9.jpg", type: "Transport & Logistics", name: "TAP Ride Hailing", dots: 1 },
     { src: "image10.jpg", type: "Others", name: "FWD Insurance", dots: 3, span: true },
     { src: "image11.jpg", type: "Retail & Entertainment", name: "Isetan", dots: 3 },
-    { src: "image12.jpg", type: "Retail & Entertainment", name: "HBO GO", dots: 2, span: true },
+    {
+        src: "image12.jpg",
+        type: "Retail & Entertainment",
+        name: "HBO GO",
+        dots: 2,
+        span: true,
+    },
     { src: "image13.jpg", type: "Telco", name: "MyRepublic Mobile", dots: 2 },
     { src: "image14.jpg", type: "Transport & Logistics", name: "ComfortDelGro", dots: 1 },
-    { src: "image15.jpg", type: "Retail & Entertainment", name: "7Rewards", dots: 3, span: true },
+    {
+        src: "image15.jpg",
+        type: "Retail & Entertainment",
+        name: "7Rewards",
+        dots: 3,
+        span: true,
+    },
     {
         src: "image16.jpg",
         type: "Retail & Entertainment",
@@ -64,7 +92,12 @@ export const images = [
         name: "Dine Inn",
         dots: 3,
     },
-    { src: "image24.jpg", type: "Transport & Logistics", name: "Siemens Engineering", dots: 3 },
+    {
+        src: "image24.jpg",
+        type: "Transport & Logistics",
+        name: "Siemens Engineering",
+        dots: 3,
+    },
     {
         src: "image25.jpg",
         type: "",

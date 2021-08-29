@@ -30,11 +30,12 @@ const FullNavigation = (props) => {
     const router = useRouter();
     const items = [
         { path: "/", text: "Work" },
-        { path: "/", text: "Solutions" },
-        { path: "/", text: "Services" },
-        { path: "/", text: "About us" },
-        { path: "/", text: "Blog" },
+        { path: "/solutions", text: "Solutions" },
+        { path: "/services", text: "Services" },
+        { path: "/about", text: "About us" },
+        { path: "/blog", text: "Blog" },
     ];
+
     return (
         <Navigation>
             {() => (
@@ -43,16 +44,17 @@ const FullNavigation = (props) => {
                     <div className={`${classes.navigation__menu}`}>
                         <ul className={`${classes.navigation__list}`}>
                             {items.map((item) => (
-                                <li
-                                    className={`${classes.navigation__item} ${
-                                        router.pathname === item.path
-                                            ? classes.navigation__active
-                                            : ""
-                                    }`}
-                                    key={item.text}
-                                >
+                                <li className={`${classes.navigation__item} `} key={item.text}>
                                     <Link href={item.path}>
-                                        <a className={`${classes.navigation__link}`}>{item.text}</a>
+                                        <a
+                                            className={`${classes.navigation__link} ${
+                                                router.pathname === item.path
+                                                    ? classes.navigation__active
+                                                    : ""
+                                            }`}
+                                        >
+                                            {item.text}
+                                        </a>
                                     </Link>
                                 </li>
                             ))}
@@ -83,7 +85,7 @@ const BackNavigation = (props) => {
                         <Button />
                     </div>
 
-                    <Humburger items={[{ path: "/", text: "Request a quote" }]} />
+                    <Humburger items={[{ path: "/request", text: "Request a quote" }]} />
                 </>
             )}
         </Navigation>

@@ -7,7 +7,10 @@ const Headings = (props) => {
         { text: "See 100% of our power", red: true },
     ];
     return headings.map((heading, i) => (
-        <p className={`${classes.headings} ${heading.red && classes.headings_red}`} key={i}>
+        <p
+            className={`${classes.headings} ${heading.red && classes.headings_red}`}
+            key={heading.text}
+        >
             {heading.text}
         </p>
     ));

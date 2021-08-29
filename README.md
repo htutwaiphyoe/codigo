@@ -9,4 +9,3 @@
 -   NextJS
 -   ReactJS
 -   Sass
--   Swiper
