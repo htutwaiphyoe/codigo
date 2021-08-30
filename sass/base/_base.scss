@@ -189,10 +189,10 @@ html.sr .load-hidden {
 @include responsive(1, 700) {
     .swiper .swiper-pagination,
     .swiper-slide img {
-        transform: translateX(2.5rem) !important;
-        -webkit-transform: translateX(2.5rem) !important;
-        -moz-transform: translateX(2.5rem) !important;
-        -ms-transform: translateX(2.5rem) !important;
-        -o-transform: translateX(2.5rem) !important;
+        transform: translateX(3rem) !important;
+        -webkit-transform: translateX(3rem) !important;
+        -moz-transform: translateX(3rem) !important;
+        -ms-transform: translateX(3rem) !important;
+        -o-transform: translateX(3rem) !important;
     }
 }
