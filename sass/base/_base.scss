@@ -100,32 +100,73 @@ html.sr .load-hidden {
 }
 .swiper .swiper-pagination,
 .swiper-slide img {
-    transform: translateX(5.5%) !important;
-    -webkit-transform: translateX(5.5%) !important;
-    -moz-transform: translateX(5.5%) !important;
-    -ms-transform: translateX(5.5%) !important;
-    -o-transform: translateX(5.5%) !important;
+    transform: translateX(7%) !important;
+    -webkit-transform: translateX(7%) !important;
+    -moz-transform: translateX(7%) !important;
+    -ms-transform: translateX(7%) !important;
+    -o-transform: translateX(7%) !important;
 }
 
-@include responsive(1, 1300) {
+@include responsive(1, 1600) {
     .swiper .swiper-pagination,
     .swiper-slide img {
-        transform: translateX(1%) !important;
-        -webkit-transform: translateX(1%) !important;
-        -moz-transform: translateX(1%) !important;
-        -ms-transform: translateX(1%) !important;
-        -o-transform: translateX(1%) !important;
+        transform: translateX(5%) !important;
+        -webkit-transform: translateX(5%) !important;
+        -moz-transform: translateX(5%) !important;
+        -ms-transform: translateX(5%) !important;
+        -o-transform: translateX(5%) !important;
+    }
+}
+@include responsive(1, 1500) {
+    .swiper .swiper-pagination,
+    .swiper-slide img {
+        transform: translateX(2%) !important;
+        -webkit-transform: translateX(2%) !important;
+        -moz-transform: translateX(2%) !important;
+        -ms-transform: translateX(2%) !important;
+        -o-transform: translateX(2%) !important;
     }
 }
 
+@include responsive(1, 1400) {
+    .swiper .swiper-pagination,
+    .swiper-slide img {
+        transform: translateX(6%) !important;
+        -webkit-transform: translateX(6%) !important;
+        -moz-transform: translateX(6%) !important;
+        -ms-transform: translateX(6%) !important;
+        -o-transform: translateX(6%) !important;
+    }
+}
+@include responsive(1, 1300) {
+    .swiper .swiper-pagination,
+    .swiper-slide img {
+        transform: translateX(3%) !important;
+        -webkit-transform: translateX(3%) !important;
+        -moz-transform: translateX(3%) !important;
+        -ms-transform: translateX(3%) !important;
+        -o-transform: translateX(3%) !important;
+    }
+}
+
+@include responsive(1, 1200) {
+    .swiper .swiper-pagination,
+    .swiper-slide img {
+        transform: translateX(-1%) !important;
+        -webkit-transform: translateX(-1%) !important;
+        -moz-transform: translateX(-1%) !important;
+        -ms-transform: translateX(-1%) !important;
+        -o-transform: translateX(-1%) !important;
+    }
+}
 @include responsive(1, 1100) {
     .swiper .swiper-pagination,
     .swiper-slide img {
-        transform: translateX(-3rem) !important;
-        -webkit-transform: translateX(-3rem) !important;
-        -moz-transform: translateX(-3rem) !important;
-        -ms-transform: translateX(-3rem) !important;
-        -o-transform: translateX(-3rem) !important;
+        transform: translateX(-5%) !important;
+        -webkit-transform: translateX(-5%) !important;
+        -moz-transform: translateX(-5%) !important;
+        -ms-transform: translateX(-5%) !important;
+        -o-transform: translateX(-5%) !important;
     }
 }
 
@@ -148,10 +189,10 @@ html.sr .load-hidden {
 @include responsive(1, 700) {
     .swiper .swiper-pagination,
     .swiper-slide img {
-        transform: translateX(3rem) !important;
-        -webkit-transform: translateX(3rem) !important;
-        -moz-transform: translateX(3rem) !important;
-        -ms-transform: translateX(3rem) !important;
-        -o-transform: translateX(3rem) !important;
+        transform: translateX(2.5rem) !important;
+        -webkit-transform: translateX(2.5rem) !important;
+        -moz-transform: translateX(2.5rem) !important;
+        -ms-transform: translateX(2.5rem) !important;
+        -o-transform: translateX(2.5rem) !important;
     }
 }

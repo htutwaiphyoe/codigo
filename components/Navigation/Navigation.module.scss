@@ -52,6 +52,17 @@
         &:hover::after {
             width: 100%;
         }
+
+        &_flex {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        & i {
+            margin-right: 0.8rem;
+            font-size: 1.4rem;
+            color: $primary-color;
+        }
     }
 
     &__active {

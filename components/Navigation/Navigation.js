@@ -76,7 +76,11 @@ const BackNavigation = (props) => {
                     <ul className={`${classes.navigation__list}`}>
                         <li className={`${classes.navigation__item} `}>
                             <Link href="/">
-                                <a className={`${classes.navigation__link}`}>Back to Work</a>
+                                <a
+                                    className={`${classes.navigation__link} ${classes.navigation__link_flex}`}
+                                >
+                                    <i className="ri-arrow-left-fill"></i>Back to Work
+                                </a>
                             </Link>
                         </li>
                     </ul>
